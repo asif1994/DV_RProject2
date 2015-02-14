@@ -1,0 +1,62 @@
+# Project 2
+
+This is the second project for CS 329E Data Visualization. The data we will analyze come from the World Health Organization. The topic is cause of child deaths for different age groups in the United States, China, Germany and Japan.
+In order to reproduce this project, please follow the following instructions.
+
+## Step 1
+#### Load the correct packages
+Use the following code to load the correct packages into RStudio.
+
+```{r message = FALSE}
+source("../01 Data/Packages.R", echo = TRUE)
+```
+
+## Step 2
+#### Import the data from the Oracle cloud server.
+
+The data table has 10 columns of information, but the columns we will be focusing on are as follows: CAUSESOFDEATH, YEAR, WHOREGION, COUNTRY, AGEGROUP, and NUMERIC.
+
+```{r}
+source("../01 Data/GetDB.R", echo = TRUE)
+```
+
+## Step 3
+#### Create the plots from the data frames using **ggplot** functions.
+
+We can now create interesting plots for each data frame we have created from the database.
+
+For the Order Details data frame:
+```{r}
+source("../02 Visualizations/VisualOrderDetails.R", echo = TRUE)
+```
+
+For the Orders data frame:
+```{r}
+source("../02 Visualizations/VisualOrders.R", echo = TRUE)
+```
+
+For the Items data frame:
+```{r}
+source("../02 Visualizations/VisualItems.R", echo = TRUE)
+```
+
+For the Customers data frame:
+```{r}
+source("../02 Visualizations/VisualCustomers.R", echo = TRUE)
+```
+
+## Step 4
+#### Use a query to produce the entire data set.
+
+##Use the following code to merge all of the data frames together for analysis:
+```{r}
+source("../01 Data/EntireDF.R", echo = TRUE)
+```
+
+## Step 5
+#### Produce plots using **ggplot**
+
+Use the new data frame named *dfEntire* to recreate the following plots.
+```{r}
+source("../02 Visualizations/VisualDfEntire.R", echo = TRUE)
+```
