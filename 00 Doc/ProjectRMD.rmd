@@ -1,5 +1,5 @@
 # Project 2
-
+### Created by Asif Chowdhury, Justin Owens, Jash Choraria
 This is the second project for CS 329E Data Visualization. The data we will analyze comes from the World Health Organization. The topic is cause of child deaths for different age groups in the United States, China, Germany and Japan.
 In order to reproduce this project, please follow the following instructions.
 
