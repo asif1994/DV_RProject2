@@ -1,2 +1,2 @@
 actual_data <- df %>% select (CAUSESOFDEATH, YEAR, WHOREGION, COUNTRY, AGEGROUP, NUMERIC)
-tbl_df(actual_data)
+head(actual_data)
