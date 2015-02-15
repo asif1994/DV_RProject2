@@ -1,0 +1,1 @@
+Country_AgeGroup <- actual_data %>% group_by (COUNTRY, AGEGROUP) %>% summarise (MEAN_DEATH = round(mean(NUMERIC))) 
