@@ -1,0 +1,1 @@
+Year_sum <- actual_data %>% group_by (YEAR, COUNTRY, AGEGROUP) %>% summarise(sum = round(sum(NUMERIC))) %>% tbl_df
