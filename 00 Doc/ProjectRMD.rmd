@@ -1,0 +1,58 @@
+# Project 2
+
+This is the second project for CS 329E Data Visualization. The data we will analyze come from the World Health Organization. The topic is cause of child deaths for different age groups in the United States, China, Germany and Japan.
+In order to reproduce this project, please follow the following instructions.
+
+## Step 1
+#### Load the correct packages
+Use the following code to load the correct packages into RStudio.
+
+```{r message = FALSE}
+source("../01 Data/Packages.R", echo = TRUE)
+```
+
+## Step 2
+#### Import the data from the Oracle cloud server.
+
+The data table has 10 columns of information, but the columns we will be focusing on are as follows: CAUSESOFDEATH, YEAR, WHOREGION, COUNTRY, AGEGROUP, and NUMERIC.
+
+```{r}
+source("../01 Data/GetDB.R", echo = TRUE)
+```
+
+## Step 3
+#### Create a new dataframe.
+
+After getting the data table from the server, we can extract only the columns we want, those discussed above.
+
+```{r}
+source("../01 Data/Actual_data.R", echo = TRUE)
+```
+
+## Step 4
+#### Use data wrangling to creat smaller dataframes for visualizations.
+
+The first visualization we will create will look at the average number of children deaths between the ages of 0 days to 59 months. We will need to "wrangle" the data from our orignal table using this code:
+
+```{r}
+source("../01 Data/Country_Death.R", echo = TRUE)
+```
+
+The second visualization will look at the number of deaths per year for each of the countries and each of the age groups. We will need to "wrangle" the data from our orignal table using this code:
+
+```{r}
+source("../01 Data/Country_Agegroup.R", echo = TRUE)
+```
+
+The third visual will look at the total number of deats per agegroup in each country over time. We will need to "wrangle" the data from our original table using this code:
+
+```{r}
+source("../01 Data/Year_Sum.R", echo = TRUE)
+```
+
+## Step 5
+#### Use ggplot and the newly "wrangled" data frames to create interesting visuals.
+
+We will now create the interesting visuals for all of the dataframes we have "wrangled" in step 4.
+
+
