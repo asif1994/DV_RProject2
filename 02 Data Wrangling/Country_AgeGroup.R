@@ -1,1 +1,1 @@
-Country_AgeGroup <- actual_data %>% group_by (COUNTRY, AGEGROUP) %>% summarise (MEAN_DEATH = round(mean(NUMERIC))) 
+Country_AgeGroup <- actual_data %>% group_by (COUNTRY, AGEGROUP) %>% summarise (MEDIAN_DEATH = round(median(NUMERIC))) %>% filter(COUNTRY != "China")

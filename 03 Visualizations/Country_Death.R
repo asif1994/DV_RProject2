@@ -1,0 +1,1 @@
+ggplot(Country_Death, aes(x = COUNTRY, y = MEAN_DEATH, color = COUNTRY)) + geom_point(aes(size = 10000))

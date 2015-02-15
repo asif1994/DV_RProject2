@@ -1,1 +1,1 @@
-ggplot(Year_Cause, aes(x = YEAR, y = sum, color = CAUSESOFDEATH)) + geom_line() + facet_wrap(~CAUSESOFDEATH)
+ggplot(Year_Cause, aes(x = YEAR, y = sum)) + geom_line() + facet_wrap(~CAUSESOFDEATH)
